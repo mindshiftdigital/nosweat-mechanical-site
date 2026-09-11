@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Medical facility with commercial HVAC systems">
+  <defs>
+    <linearGradient id="skyMed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D0E0EC"/>
+      <stop offset="100%" stop-color="#E8F0F8"/>
+    </linearGradient>
+    <linearGradient id="medBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0F4F8"/>
+      <stop offset="100%" stop-color="#D8E0EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#skyMed)"/>
+
+  <!-- Ground / lawn -->
+  <rect x="0" y="420" width="800" height="80" fill="#8A9A7A"/>
+  <rect x="0" y="418" width="800" height="6" fill="#7A8A6A"/>
+
+  <!-- Concrete drive -->
+  <rect x="200" y="418" width="400" height="82" fill="#A8A8A0"/>
+  <!-- Drive lane markings -->
+  <rect x="380" y="418" width="6" height="82" fill="white" opacity="0.5"/>
+
+  <!-- Main building -->
+  <rect x="80" y="160" width="640" height="260" fill="url(#medBody)" rx="2"/>
+  <rect x="80" y="158" width="640" height="10" fill="#C0CCD8" rx="2"/>
+
+  <!-- Building facade - glass curtainwall -->
+  <!-- Left section -->
+  <rect x="85" y="168" width="200" height="250" fill="#D8E8F4" opacity="0.6"/>
+  <!-- Horizontal mullions -->
+  <line x1="85" y1="200" x2="285" y2="200" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="85" y1="240" x2="285" y2="240" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="85" y1="280" x2="285" y2="280" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="85" y1="320" x2="285" y2="320" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="85" y1="360" x2="285" y2="360" stroke="#B0C0D0" stroke-width="2"/>
+  <!-- Vertical mullions -->
+  <line x1="135" y1="168" x2="135" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+  <line x1="185" y1="168" x2="185" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+  <line x1="235" y1="168" x2="235" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+
+  <!-- Center entrance tower -->
+  <rect x="310" y="120" width="180" height="300" fill="#E8F0F8" rx="2"/>
+  <rect x="310" y="118" width="180" height="10" fill="#B0C0D0" rx="2"/>
+
+  <!-- Red cross / medical symbol -->
+  <rect x="378" y="136" width="44" height="14" fill="#CC2222" rx="2"/>
+  <rect x="392" y="122" width="14" height="42" fill="#CC2222" rx="2"/>
+
+  <!-- Entrance canopy -->
+  <rect x="295" y="160" width="210" height="14" fill="#1A3A5C" rx="2"/>
+  <rect x="306" y="174" width="6" height="60" fill="#2A4A6C" rx="2"/>
+  <rect x="488" y="174" width="6" height="60" fill="#2A4A6C" rx="2"/>
+
+  <!-- Entrance doors -->
+  <rect x="335" y="340" width="110" height="80" fill="#C8E0F0" stroke="#8AAAC2" stroke-width="2" rx="1"/>
+  <line x1="390" y1="340" x2="390" y2="420" stroke="#8AAAC2" stroke-width="1.5"/>
+
+  <!-- Entrance lobby glazing upper -->
+  <rect x="320" y="188" width="160" height="150" fill="#D0E4F4" opacity="0.7"/>
+  <line x1="400" y1="188" x2="400" y2="338" stroke="#B0C0D0" stroke-width="1.5"/>
+  <line x1="320" y1="250" x2="480" y2="250" stroke="#B0C0D0" stroke-width="2"/>
+
+  <!-- Right section -->
+  <rect x="515" y="168" width="200" height="250" fill="#D8E8F4" opacity="0.6"/>
+  <line x1="515" y1="200" x2="715" y2="200" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="515" y1="240" x2="715" y2="240" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="515" y1="280" x2="715" y2="280" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="515" y1="320" x2="715" y2="320" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="515" y1="360" x2="715" y2="360" stroke="#B0C0D0" stroke-width="2"/>
+  <line x1="565" y1="168" x2="565" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+  <line x1="615" y1="168" x2="615" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+  <line x1="665" y1="168" x2="665" y2="418" stroke="#B0C0D0" stroke-width="1.5"/>
+
+  <!-- Mechanical penthouse -->
+  <rect x="140" y="100" width="200" height="62" fill="#B8C4D0" rx="4"/>
+  <rect x="140" y="98" width="200" height="8" fill="#A0B0C0" rx="2"/>
+  <!-- AHU inside penthouse -->
+  <rect x="152" y="110" width="80" height="42" fill="#5A7A96" rx="3"/>
+  <circle cx="175" cy="128" r="14" fill="#3A5A76"/>
+  <circle cx="215" cy="128" r="14" fill="#3A5A76"/>
+  <rect x="240" y="110" width="88" height="42" fill="#5A7A96" rx="3"/>
+  <circle cx="265" cy="128" r="14" fill="#3A5A76"/>
+  <circle cx="305" cy="128" r="14" fill="#3A5A76"/>
+
+  <rect x="460" y="100" width="200" height="62" fill="#B8C4D0" rx="4"/>
+  <rect x="460" y="98" width="200" height="8" fill="#A0B0C0" rx="2"/>
+  <rect x="472" y="110" width="80" height="42" fill="#5A7A96" rx="3"/>
+  <circle cx="495" cy="128" r="14" fill="#3A5A76"/>
+  <circle cx="535" cy="128" r="14" fill="#3A5A76"/>
+  <rect x="560" y="110" width="88" height="42" fill="#5A7A96" rx="3"/>
+  <circle cx="585" cy="128" r="14" fill="#3A5A76"/>
+  <circle cx="625" cy="128" r="14" fill="#3A5A76"/>
+
+  <!-- HEPA / specialty unit label -->
+  <rect x="145" y="148" width="100" height="14" fill="#1A3A5C" rx="2"/>
+  <text x="195" y="159" text-anchor="middle" fill="#E87B2A" font-size="7" font-family="Arial, sans-serif" font-weight="bold">AHU / HEPA</text>
+  <rect x="465" y="148" width="100" height="14" fill="#1A3A5C" rx="2"/>
+  <text x="515" y="159" text-anchor="middle" fill="#E87B2A" font-size="7" font-family="Arial, sans-serif" font-weight="bold">AHU / HEPA</text>
+
+  <!-- Hospital name -->
+  <rect x="250" y="205" width="300" height="28" fill="#1A3A5C" opacity="0.85" rx="3"/>
+  <text x="400" y="224" text-anchor="middle" fill="white" font-size="13" font-family="Arial, sans-serif" font-weight="bold" letter-spacing="1">MEDICAL CENTER</text>
+
+  <!-- Caption -->
+  <rect x="0" y="458" width="800" height="42" fill="#1A3A5C" opacity="0.9"/>
+  <text x="20" y="476" fill="white" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Healthcare Facility — Precision HVAC</text>
+  <text x="20" y="493" fill="#E87B2A" font-size="11" font-family="Arial, sans-serif">HEPA Filtration • Pressure Control • Isolation Rooms • BAS Integration</text>
+  <text x="700" y="481" text-anchor="end" fill="#8AAAC2" font-size="11" font-family="Arial, sans-serif">Clark County, NV</text>
+</svg>

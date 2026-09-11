@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to join the No Sweat Mechanical team - Henderson, NV commercial HVAC contractor. We're hiring experienced technicians, estimators, and support staff.">
+  <title>Apply | No Sweat Mechanical - Henderson, NV</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .apply-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: var(--space-16);
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .apply-layout { grid-template-columns: 1fr; }
+    }
+    .apply-section-heading {
+      font-size: var(--text-base);
+      font-weight: var(--weight-bold);
+      color: var(--color-primary);
+      margin: var(--space-8) 0 var(--space-4);
+      padding-bottom: var(--space-2);
+      border-bottom: 2px solid var(--color-neutral-200);
+    }
+    .apply-section-heading:first-of-type { margin-top: 0; }
+    .work-history-block {
+      border: var(--border-width) solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      margin-bottom: var(--space-4);
+      background: var(--color-neutral-50);
+    }
+    .work-history-block__label {
+      font-size: var(--text-sm);
+      font-weight: var(--weight-semibold);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-4);
+    }
+    .radio-group, .checkbox-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-top: var(--space-2);
+    }
+    .radio-label, .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      cursor: pointer;
+    }
+    .radio-label input, .checkbox-label input { margin: 0; }
+    .apply-sidebar-card {
+      background: var(--color-primary);
+      color: white;
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+    }
+    .apply-sidebar-card__title {
+      font-size: var(--text-lg);
+      font-weight: var(--weight-bold);
+      margin-bottom: var(--space-4);
+    }
+    .apply-sidebar-card p {
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+      opacity: 0.9;
+      margin-bottom: var(--space-3);
+    }
+    .apply-sidebar-card p:last-child { margin-bottom: 0; }
+    .apply-pdf-link {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      color: white;
+      text-decoration: none;
+      font-size: var(--text-sm);
+      font-weight: var(--weight-semibold);
+      margin-top: var(--space-5);
+      transition: background 0.2s;
+    }
+    .apply-pdf-link:hover { background: rgba(255,255,255,0.22); }
+    .apply-values-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-4) 0 0;
+    }
+    .apply-values-list li {
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+      opacity: 0.9;
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+    .apply-values-list li:last-child { border-bottom: none; }
+    .apply-values-list li::before { content: "✓"; flex-shrink: 0; font-weight: bold; }
+    .form-hint {
+      font-size: var(--text-xs);
+      color: var(--color-neutral-500);
+      margin-top: var(--space-1);
+    }
+  </style>
+</head>
+<body data-page="apply">
+
+  <div class="topbar"><div class="container"><div class="topbar__inner"><div class="topbar__contact"><a href="tel:+17025680137" class="topbar__item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.12 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.23 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"></path></svg>(702) 568-0137</a><a href="mailto:info@nosweatmechanical.com" class="topbar__item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>info@nosweatmechanical.com</a></div><span class="topbar__license">NV Contractor License #75507 · AZ ROC 367318</span></div></div></div>
+
+  <header class="site-header" id="siteHeader"><div class="container"><div class="site-header__inner"><a href="index.html" class="site-logo"><img src="images/nsm-logo-transparent.png" alt="No Sweat Mechanical" class="site-logo__img" style="height:44px;width:auto;display:block;"></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav"><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span></button><nav class="site-nav" id="siteNav" role="navigation"><a href="index.html" class="site-nav__link">Home</a><a href="about.html" class="site-nav__link">About</a><a href="services.html" class="site-nav__link">Services</a><a href="projects.html" class="site-nav__link">Projects</a><a href="maintenance.html" class="site-nav__link">Maintenance</a><a href="apply.html" class="site-nav__link active">Apply</a><a href="https://nosweataclv.com/" class="site-nav__link" target="_blank" rel="noopener noreferrer">Residential ↗</a><a href="contact.html" class="site-nav__cta">Contact Us</a></nav></div></div></header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">/</span><span>Apply</span></nav>
+        <div class="page-hero__eyebrow">Join the Team</div>
+        <h1 class="page-hero__title">Ready to Do Work You're Proud of - With a Crew That's Got Your Back?</h1>
+        <p class="page-hero__desc">We're always looking for skilled, reliable people who take their craft seriously. Fill out the form below and we'll be in touch.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="apply-layout">
+
+          <!-- FORM -->
+          <div>
+            <form class="contact-form" name="employment-application" method="POST" action="/application-thankyou" data-netlify="true" netlify-honeypot="bot-field" id="applyForm">
+              <input type="hidden" name="form-name" value="employment-application">
+              <input type="hidden" name="bot-field">
+
+              <!-- PERSONAL INFORMATION -->
+              <div class="apply-section-heading">Personal Information</div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="first-name">First Name <span style="color:var(--color-error);">*</span></label>
+                  <input class="form-input" type="text" id="first-name" name="first_name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="last-name">Last Name <span style="color:var(--color-error);">*</span></label>
+                  <input class="form-input" type="text" id="last-name" name="last_name" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="address">Street Address</label>
+                <input class="form-input" type="text" id="address" name="address" autocomplete="street-address">
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="city">City <span style="color:var(--color-error);">*</span></label>
+                  <input class="form-input" type="text" id="city" name="city" required autocomplete="address-level2">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="state">State</label>
+                  <input class="form-input" type="text" id="state" name="state" value="NV" autocomplete="address-level1">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="zip">ZIP Code</label>
+                  <input class="form-input" type="text" id="zip" name="zip" autocomplete="postal-code">
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span style="color:var(--color-error);">*</span></label>
+                  <input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span style="color:var(--color-error);">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label">Are you 18 years of age or older? <span style="color:var(--color-error);">*</span></label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="is_18" value="yes" required> Yes</label>
+                    <label class="radio-label"><input type="radio" name="is_18" value="no"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Legally authorized to work in the US? <span style="color:var(--color-error);">*</span></label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="work_auth" value="yes" required> Yes</label>
+                    <label class="radio-label"><input type="radio" name="work_auth" value="no"> No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label">Valid driver's license? <span style="color:var(--color-error);">*</span></label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="drivers_license" value="yes" required> Yes</label>
+                    <label class="radio-label"><input type="radio" name="drivers_license" value="no"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="license-restrictions">License Restrictions (if any)</label>
+                  <input class="form-input" type="text" id="license-restrictions" name="license_restrictions" placeholder="None">
+                </div>
+              </div>
+
+              <!-- POSITION APPLIED FOR -->
+              <div class="apply-section-heading">Position Applied For</div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="position">Position <span style="color:var(--color-error);">*</span></label>
+                  <select class="form-select" id="position" name="position" required>
+                    <option value="">Select a position…</option>
+                    <option value="service-tech">Service Technician</option>
+                    <option value="apprentice">Apprentice / Helper</option>
+                    <option value="sheet-metal">Sheet Metal Worker</option>
+                    <option value="estimator">Estimator</option>
+                    <option value="project-manager">Project Manager / Superintendent</option>
+                    <option value="office">Office / Administrative</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="start-date">Date Available to Start</label>
+                  <input class="form-input" type="date" id="start-date" name="start_date">
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="desired-pay">Desired Pay</label>
+                  <input class="form-input" type="text" id="desired-pay" name="desired_pay">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Employment Type</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="employment_type" value="full-time"> Full-Time</label>
+                    <label class="radio-label"><input type="radio" name="employment_type" value="part-time"> Part-Time</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="referral">How did you hear about us?</label>
+                <select class="form-select" id="referral" name="referral">
+                  <option value="">Select…</option>
+                  <option value="employee-referral">Employee Referral</option>
+                  <option value="indeed">Indeed</option>
+                  <option value="website">Company Website</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- WORK HISTORY -->
+              <div class="apply-section-heading">Work History</div>
+              <p class="form-hint" style="margin-bottom:var(--space-4);">List your last three employers, starting with the most recent.</p>
+
+              <div class="work-history-block">
+                <div class="work-history-block__label">Employer 1 (Most Recent)</div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp1-name">Employer Name</label>
+                    <input class="form-input" type="text" id="emp1-name" name="emp1_name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp1-phone">Phone</label>
+                    <input class="form-input" type="tel" id="emp1-phone" name="emp1_phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp1-position">Position / Title</label>
+                  <input class="form-input" type="text" id="emp1-position" name="emp1_position">
+                </div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp1-start">Start Date</label>
+                    <input class="form-input" type="month" id="emp1-start" name="emp1_start">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp1-end">End Date</label>
+                    <input class="form-input" type="month" id="emp1-end" name="emp1_end" placeholder="Present if still employed">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp1-reason">Reason for Leaving</label>
+                  <input class="form-input" type="text" id="emp1-reason" name="emp1_reason">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">May we contact this employer?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="emp1_contact" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="emp1_contact" value="no"> No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-history-block">
+                <div class="work-history-block__label">Employer 2</div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp2-name">Employer Name</label>
+                    <input class="form-input" type="text" id="emp2-name" name="emp2_name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp2-phone">Phone</label>
+                    <input class="form-input" type="tel" id="emp2-phone" name="emp2_phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp2-position">Position / Title</label>
+                  <input class="form-input" type="text" id="emp2-position" name="emp2_position">
+                </div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp2-start">Start Date</label>
+                    <input class="form-input" type="month" id="emp2-start" name="emp2_start">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp2-end">End Date</label>
+                    <input class="form-input" type="month" id="emp2-end" name="emp2_end">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp2-reason">Reason for Leaving</label>
+                  <input class="form-input" type="text" id="emp2-reason" name="emp2_reason">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">May we contact this employer?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="emp2_contact" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="emp2_contact" value="no"> No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-history-block">
+                <div class="work-history-block__label">Employer 3</div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp3-name">Employer Name</label>
+                    <input class="form-input" type="text" id="emp3-name" name="emp3_name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp3-phone">Phone</label>
+                    <input class="form-input" type="tel" id="emp3-phone" name="emp3_phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp3-position">Position / Title</label>
+                  <input class="form-input" type="text" id="emp3-position" name="emp3_position">
+                </div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="emp3-start">Start Date</label>
+                    <input class="form-input" type="month" id="emp3-start" name="emp3_start">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp3-end">End Date</label>
+                    <input class="form-input" type="month" id="emp3-end" name="emp3_end">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="emp3-reason">Reason for Leaving</label>
+                  <input class="form-input" type="text" id="emp3-reason" name="emp3_reason">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">May we contact this employer?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="emp3_contact" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="emp3_contact" value="no"> No</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EDUCATION & TRAINING -->
+              <div class="apply-section-heading">Education &amp; Training</div>
+
+              <div class="form-group">
+                <label class="form-label" for="education-level">Highest Level of Education Completed</label>
+                <select class="form-select" id="education-level" name="education_level">
+                  <option value="">Select…</option>
+                  <option value="some-high-school">Some High School</option>
+                  <option value="hs-diploma">High School Diploma / GED</option>
+                  <option value="some-college">Some College</option>
+                  <option value="associates">Associate's Degree</option>
+                  <option value="bachelors">Bachelor's Degree</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label" for="trade-school">Trade School / Apprenticeship Program</label>
+                  <input class="form-input" type="text" id="trade-school" name="trade_school" placeholder="School or program name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="trade-program">Program / Course of Study</label>
+                  <input class="form-input" type="text" id="trade-program" name="trade_program" placeholder="e.g. HVAC Technology">
+                </div>
+              </div>
+
+              <!-- CERTIFICATIONS & SKILLS -->
+              <div class="apply-section-heading">Certifications &amp; Skills</div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label">EPA Section 608 Certification?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="epa608" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="epa608" value="no"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="epa608-type">Type (if yes)</label>
+                  <select class="form-select" id="epa608-type" name="epa608_type">
+                    <option value="">Select…</option>
+                    <option value="universal">Universal</option>
+                    <option value="type-i">Type I (Small Appliances)</option>
+                    <option value="type-ii">Type II (High Pressure)</option>
+                    <option value="type-iii">Type III (Low Pressure)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label">NATE Certification?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="nate" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="nate" value="no"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">OSHA Training?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="osha" value="10"> OSHA 10</label>
+                    <label class="radio-label"><input type="radio" name="osha" value="30"> OSHA 30</label>
+                    <label class="radio-label"><input type="radio" name="osha" value="none"> None</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form__row">
+                <div class="form-group">
+                  <label class="form-label">Do you have your own hand tools?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="own_tools" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="own_tools" value="no"> No</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Commercial HVAC experience?</label>
+                  <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="commercial_exp" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="commercial_exp" value="no"> No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="other-certs">Other Certifications or Licenses</label>
+                <input class="form-input" type="text" id="other-certs" name="other_certs" placeholder="e.g. Low Voltage, Gas Piping, Brazing, Forklift…">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="equipment-exp">Types of Equipment You've Worked On</label>
+                <textarea class="form-textarea" id="equipment-exp" name="equipment_exp" rows="3" placeholder="e.g. Trane, Daikin, and Carrier rooftop units; split systems; swamp coolers; commercial refrigeration…" style="min-height:80px;"></textarea>
+              </div>
+
+              <!-- REFERENCES -->
+              <div class="apply-section-heading">References</div>
+              <p class="form-hint" style="margin-bottom:var(--space-4);">Please provide two professional references. Do not list former supervisors you've already listed above.</p>
+
+              <div class="work-history-block">
+                <div class="work-history-block__label">Reference 1</div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="ref1-name">Name</label>
+                    <input class="form-input" type="text" id="ref1-name" name="ref1_name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ref1-phone">Phone</label>
+                    <input class="form-input" type="tel" id="ref1-phone" name="ref1_phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ref1-relationship">Relationship</label>
+                  <input class="form-input" type="text" id="ref1-relationship" name="ref1_relationship">
+                </div>
+              </div>
+
+              <div class="work-history-block">
+                <div class="work-history-block__label">Reference 2</div>
+                <div class="contact-form__row">
+                  <div class="form-group">
+                    <label class="form-label" for="ref2-name">Name</label>
+                    <input class="form-input" type="text" id="ref2-name" name="ref2_name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ref2-phone">Phone</label>
+                    <input class="form-input" type="tel" id="ref2-phone" name="ref2_phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ref2-relationship">Relationship</label>
+                  <input class="form-input" type="text" id="ref2-relationship" name="ref2_relationship">
+                </div>
+              </div>
+
+              <!-- ADDITIONAL INFORMATION -->
+              <div class="apply-section-heading">Additional Information</div>
+
+              <div class="form-group">
+                <label class="form-label" for="why-nsm">Why are you interested in working for No Sweat Mechanical?</label>
+                <textarea class="form-textarea" id="why-nsm" name="why_nsm" rows="4" style="min-height:100px;"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="additional">Anything else you'd like us to know?</label>
+                <textarea class="form-textarea" id="additional" name="additional" rows="3" style="min-height:80px;"></textarea>
+              </div>
+
+              <!-- ACKNOWLEDGMENT -->
+              <div class="apply-section-heading">Acknowledgment</div>
+
+              <div class="form-group">
+                <label class="checkbox-label" style="align-items:flex-start;gap:var(--space-3);">
+                  <input type="checkbox" name="acknowledge" required style="margin-top:3px;flex-shrink:0;">
+                  <span style="font-size:var(--text-sm);color:var(--color-neutral-700);line-height:var(--leading-relaxed);">I certify that the information provided on this application is true, complete, and accurate to the best of my knowledge. I understand that any misrepresentation or omission may disqualify me from consideration or result in termination of employment. I authorize No Sweat Mechanical to verify the information I have provided and to contact former employers and references.</span>
+                </label>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+                  Submit Application
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+                <p style="font-size:var(--text-xs);color:var(--color-neutral-500);margin-top:var(--space-3);text-align:center;">We review all applications and will contact qualified candidates within a week.</p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- SIDEBAR -->
+          <div>
+            <div class="apply-sidebar-card">
+              <div class="apply-sidebar-card__title">What It's Like to Work Here</div>
+              <ul class="apply-values-list">
+                <li>Commercial work - no residential callbacks or long drives across town</li>
+                <li>Crew that communicates and backs each other up in the field</li>
+                <li>Ownership that came up in the trade and knows what the job actually requires</li>
+                <li>Equipment stocked trucks - you're not driving across town for parts</li>
+                <li>Pay that reflects your experience and what you bring to the job</li>
+              </ul>
+              <a href="nsm-employment-application.pdf" class="apply-pdf-link" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Download PDF Application
+              </a>
+            </div>
+
+            <div class="card" style="margin-top:var(--space-6);">
+              <div style="font-weight:var(--weight-bold);color:var(--color-neutral-900);margin-bottom:var(--space-3);">Questions?</div>
+              <p style="font-size:var(--text-sm);color:var(--color-neutral-600);line-height:var(--leading-relaxed);margin-bottom:var(--space-4);">If you'd prefer to call or email before applying, we're happy to talk through what we're currently hiring for.</p>
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+                <a href="tel:+17025680137" style="font-size:var(--text-sm);color:var(--color-accent);font-weight:var(--weight-semibold);">(702) 568-0137</a>
+                <a href="mailto:info@nosweatmechanical.com" style="font-size:var(--text-sm);color:var(--color-accent);font-weight:var(--weight-semibold);">info@nosweatmechanical.com</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><img src="images/nsm-logo-transparent.png" alt="No Sweat Mechanical" class="site-logo__img" style="height:36px;width:auto;display:block;"></a>
+          <p class="footer-brand__desc">Full-service commercial HVAC contractor serving the Las Vegas Valley. Design, installation, service, and maintenance for commercial and industrial facilities.</p>
+          <div class="footer-brand__contact">
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              410 Mark Leany Dr, Henderson, NV 89011
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.12 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.23 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"></path></svg>
+              <a href="tel:+17025680137">(702) 568-0137</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@nosweatmechanical.com">info@nosweatmechanical.com</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="footer-nav__heading">Services</div>
+          <ul class="footer-nav__list">
+            <li><a href="services.html#design-build">Design-Build &amp; New Construction</a></li>
+            <li><a href="services.html#retrofits">Retrofits &amp; Replacements</a></li>
+            <li><a href="services.html#tenant-improvements">Tenant Improvements</a></li>
+            <li><a href="maintenance.html">Service &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-nav__heading">Company</div>
+          <ul class="footer-nav__list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Project Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html">Apply</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-nav__heading">Markets Served</div>
+          <ul class="footer-nav__list footer-nav__list--markets">
+            <li>Retail &amp; Mixed-Use</li>
+            <li>Hospitality &amp; Entertainment</li>
+            <li>Healthcare</li>
+            <li>Industrial &amp; Manufacturing</li>
+            <li>Education</li>
+            <li>Automotive</li>
+            <li>Financial &amp; Technology</li>
+            <li>Office &amp; Commercial Real Estate</li>
+            <li>Religious &amp; Nonprofit</li>
+            <li>Cannabis / CEA</li>
+            <li>Self-Storage</li>
+            <li>Fitness &amp; Recreation</li>
+            <li>Warehouse &amp; Distribution</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">&copy; <span id="footerYear"></span> No Sweat Mechanical, LLC. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-license">
+      Nevada Contractor License #75507 &nbsp;·&nbsp; EPA Section 608 Certified
+    </div>
+  </footer>
+
+  <script src="components/nav.js"></script>
+</body>
+</html>

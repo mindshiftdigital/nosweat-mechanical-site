@@ -1,0 +1,15 @@
+# Resources not for deployment
+_RESOURCES - Do Not Upload to Netlify/
+
+# Claude Code local config
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Working docs
+*.docx
+*.md
+*.HEIC

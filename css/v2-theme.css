@@ -1,0 +1,496 @@
+/* ============================================================
+   V2 Theme — Design Option B
+   No Sweat Mechanical
+
+   Bold / Dark / Industrial aesthetic
+   Inspired by heavy commercial contractor design language.
+   Same content and brand colors as v1; different visual weight
+   and personality — dark headers, angular edges, centered hero.
+   ============================================================ */
+
+
+/* ============================================================
+   DESIGN TOKEN OVERRIDES
+   More angular — construction brand shouldn't be too soft
+   ============================================================ */
+:root {
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   6px;
+  --radius-xl:   10px;
+
+  /* V2 extra tokens */
+  --v2-ink:      #0d1820;   /* near-black navy — header, hero, dark bands */
+  --v2-ink-2:    #162740;   /* slightly lighter navy — trust strip */
+  --v2-ink-3:    #1e3a55;   /* mid-dark navy — hover states, accents */
+}
+
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.topbar {
+  background-color: #0a1318;
+}
+
+
+/* ============================================================
+   HEADER — dark, full-bleed
+   ============================================================ */
+.site-header {
+  background-color: var(--v2-ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.45);
+  border-bottom-color: transparent;
+}
+
+/* Logo — white text on dark */
+.site-logo__name {
+  color: var(--color-white);
+}
+
+.site-logo__sub {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+/* Nav links — muted white */
+.site-nav__link {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.site-nav__link:hover {
+  color: var(--color-white);
+}
+
+.site-nav__link.active {
+  color: var(--color-white);
+  font-weight: var(--weight-semibold);
+}
+
+.site-nav__link::after {
+  background-color: var(--color-primary-light);
+}
+
+/* Hamburger bars — white on dark */
+.menu-toggle__bar {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Mobile nav — dark dropdown */
+@media (max-width: 900px) {
+  .site-nav {
+    background-color: var(--v2-ink);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.50);
+  }
+
+  .site-nav__link.active {
+    background-color: rgba(4, 93, 168, 0.22);
+    border-left-color: var(--color-primary-light);
+  }
+
+  .site-nav__cta:hover {
+    transform: none;
+  }
+}
+
+
+/* ============================================================
+   HOME HERO — dark, centered, text-first
+   The image placeholder is hidden so the hero reads as a
+   bold full-width statement block — will look great once
+   a real photo is dropped in.
+   ============================================================ */
+.home-hero {
+  background-image: linear-gradient(rgba(10,14,26,0.62), rgba(10,14,26,0.68)), url('../images/NSMTruck-Units.jpg');
+  background-color: var(--v2-ink);
+  background-size: cover;
+  background-position: center 40%;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+/* Blue radial glow from center-top — adds depth without photos */
+.home-hero::before {
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgba(4, 93, 168, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse at 90% 110%, rgba(4, 93, 168, 0.08) 0%, transparent 55%);
+}
+
+/* Full-width single column — centered text */
+.home-hero__inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide image placeholder until real photo is provided */
+.home-hero__image {
+  display: none;
+}
+
+/* Bigger, bolder headline */
+.home-hero__title {
+  font-size: clamp(2.6rem, 5.5vw, 4.25rem);
+  letter-spacing: -0.03em;
+}
+
+/* Centered description */
+.home-hero__desc {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center the CTA buttons */
+.home-hero__actions {
+  justify-content: center;
+}
+
+/* Eyebrow pill treatment */
+.home-hero__eyebrow {
+  justify-content: center;
+  background-color: rgba(4, 93, 168, 0.18);
+  border: 1px solid rgba(4, 93, 168, 0.35);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-5);
+  display: inline-flex;
+  color: #7ab8ef;
+}
+
+
+/* ============================================================
+   TRUST STRIP — dark navy
+   ============================================================ */
+.trust-strip {
+  background-color: var(--v2-ink-2);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.trust-item {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.trust-item__label {
+  color: var(--color-white);
+}
+
+.trust-item__sub {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.trust-item + .trust-item::before {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.trust-item__icon-wrap {
+  background-color: rgba(4, 93, 168, 0.28);
+}
+
+.trust-item svg {
+  color: #7ab8ef;
+}
+
+
+/* ============================================================
+   SERVICE CARDS — top-border accent, angular
+   ============================================================ */
+.card {
+  border-radius: var(--radius-sm);
+}
+
+.card--hover:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.service-card {
+  border-top: 3px solid var(--color-primary);
+  padding-top: calc(var(--space-8) + 3px); /* compensate for border */
+}
+
+/* Icon box — square */
+.service-card__icon,
+.icon-box {
+  border-radius: var(--radius-sm);
+}
+
+
+/* ============================================================
+   STATS BAND — near-black
+   ============================================================ */
+.stats-band {
+  background-color: var(--v2-ink);
+  background-image: none;
+}
+
+.stats-band .stat-block__number {
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  letter-spacing: -0.04em;
+}
+
+.stats-band__divider {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+
+/* ============================================================
+   CTA BAND — near-black with blue gradient edge
+   ============================================================ */
+.cta-band {
+  background-color: var(--v2-ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at 50% 120%, rgba(4, 93, 168, 0.20) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta-band__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+}
+
+
+/* ============================================================
+   PAGE HEROES (about, services, projects, etc.)
+   ============================================================ */
+.page-hero {
+  background-image: none;
+  background-color: var(--v2-ink);
+  position: relative;
+}
+
+.page-hero::before {
+  background-image: radial-gradient(ellipse at 70% 50%, rgba(4, 93, 168, 0.14) 0%, transparent 60%);
+}
+
+/* Remove the bottom gradient stripe — use a subtle border instead */
+.page-hero::after {
+  background: rgba(4, 93, 168, 0.35);
+  height: 1px;
+}
+
+.page-hero__title {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  letter-spacing: -0.025em;
+}
+
+
+/* ============================================================
+   SECTION EYEBROWS — blue underline indicator
+   Gives each section a bold, structural feel
+   ============================================================ */
+.section-eyebrow {
+  padding-bottom: calc(var(--space-3) + 4px);
+  position: relative;
+  display: inline-block;
+}
+
+.section-eyebrow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* Centered variant — eyebrow underline centers too */
+.section-header--center .section-eyebrow::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Eyebrows on dark backgrounds — lighter color */
+.cta-band .section-eyebrow,
+.stats-band .section-eyebrow {
+  color: rgba(122, 184, 239, 0.85);
+}
+
+.cta-band .section-eyebrow::after,
+.stats-band .section-eyebrow::after {
+  background-color: rgba(4, 93, 168, 0.60);
+}
+
+
+/* ============================================================
+   BUTTONS — sharper corners, slightly bolder feel
+   ============================================================ */
+.btn {
+  border-radius: var(--radius-md);
+  letter-spacing: 0.01em;
+}
+
+.btn-lg {
+  border-radius: var(--radius-md);
+}
+
+.btn-sm {
+  border-radius: var(--radius-sm);
+}
+
+/* On dark backgrounds — slightly different primary feel */
+.home-hero .btn-primary,
+.cta-band .btn-primary {
+  background-color: var(--color-primary);
+  box-shadow: 0 0 0 1px rgba(4, 93, 168, 0.40), 0 4px 16px rgba(4, 93, 168, 0.30);
+}
+
+.home-hero .btn-primary:hover,
+.cta-band .btn-primary:hover {
+  background-color: var(--color-primary-light);
+  box-shadow: 0 0 0 1px rgba(4, 93, 168, 0.50), 0 6px 20px rgba(4, 93, 168, 0.40);
+}
+
+/* White outline button on dark — matches hero dark bg */
+.home-hero .btn-outline-white {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.home-hero .btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* ============================================================
+   WHO WE WORK WITH SECTION — dark treatment
+   ============================================================ */
+.clients-section {
+  background-color: var(--v2-ink-2);
+}
+
+.clients-section .section-title {
+  color: var(--color-white);
+}
+
+.clients-section .section-eyebrow {
+  color: rgba(122, 184, 239, 0.85);
+}
+
+.clients-section .section-eyebrow::after {
+  background-color: rgba(4, 93, 168, 0.55);
+}
+
+.clients-section .section-header__desc {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.client-type-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.client-type-card:hover {
+  background-color: rgba(4, 93, 168, 0.15);
+  border-color: rgba(4, 93, 168, 0.40);
+}
+
+.client-type__title {
+  color: var(--color-white);
+}
+
+.client-type__desc {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* ============================================================
+   PROJECT CARDS — slightly different treatment
+   ============================================================ */
+.project-card {
+  border-radius: var(--radius-sm);
+  border-top: 3px solid var(--color-primary);
+}
+
+.project-card__image {
+  border-radius: 0;
+}
+
+
+/* ============================================================
+   ABOUT PAGE — values cards on dark
+   ============================================================ */
+.value-card {
+  border-radius: var(--radius-sm);
+  border-top: 3px solid var(--color-primary);
+}
+
+.value-card__number {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  letter-spacing: -0.05em;
+  opacity: 0.12;
+  font-weight: var(--weight-extrabold);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: calc(-1 * var(--space-4));
+  display: block;
+}
+
+
+/* ============================================================
+   MAINTENANCE PAGE — tier cards
+   ============================================================ */
+.tier-card--featured {
+  border-radius: var(--radius-sm);
+  background-color: var(--v2-ink);
+}
+
+
+/* ============================================================
+   SAFETY PAGE — cert cards
+   ============================================================ */
+.cert-card {
+  border-radius: var(--radius-sm);
+  border-top: 3px solid var(--color-primary);
+}
+
+
+/* ============================================================
+   CONTACT PAGE — form
+   ============================================================ */
+.contact-form-wrap {
+  border-radius: var(--radius-sm);
+}
+
+
+/* ============================================================
+   FOOTER — slightly adjust bottom license strip color
+   ============================================================ */
+.footer-license {
+  background-color: #070f16;
+}
+
+.footer-logo__mark {
+  border-radius: var(--radius-sm);
+}
+
+
+/* ============================================================
+   RESPONSIVE — maintain dark treatment on mobile
+   ============================================================ */
+@media (max-width: 768px) {
+  .home-hero {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+
+  .home-hero__title {
+    font-size: 2.25rem;
+  }
+}

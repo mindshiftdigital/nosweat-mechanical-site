@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Commercial refrigeration systems">
+  <defs>
+    <linearGradient id="storeBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8EEFA"/>
+      <stop offset="100%" stop-color="#C8D4E4"/>
+    </linearGradient>
+    <linearGradient id="caseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D0E0F0"/>
+      <stop offset="100%" stop-color="#A8C0D8"/>
+    </linearGradient>
+    <linearGradient id="condenserGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A7A96"/>
+      <stop offset="100%" stop-color="#3A5A76"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Store interior background -->
+  <rect width="800" height="500" fill="url(#storeBg)"/>
+
+  <!-- Ceiling -->
+  <rect x="0" y="0" width="800" height="60" fill="#D0D8E4"/>
+  <!-- Ceiling tiles -->
+  <line x1="0" y1="20" x2="800" y2="20" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="100" y1="0" x2="100" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="500" y1="0" x2="500" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <line x1="700" y1="0" x2="700" y2="60" stroke="#C0C8D4" stroke-width="1"/>
+  <!-- LED light strips -->
+  <rect x="50" y="55" width="100" height="6" fill="#FFFCE0" rx="2"/>
+  <rect x="250" y="55" width="100" height="6" fill="#FFFCE0" rx="2"/>
+  <rect x="450" y="55" width="100" height="6" fill="#FFFCE0" rx="2"/>
+  <rect x="650" y="55" width="100" height="6" fill="#FFFCE0" rx="2"/>
+
+  <!-- Floor -->
+  <rect x="0" y="440" width="800" height="60" fill="#C8C0B4"/>
+  <!-- Floor tiles -->
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#B8B0A4" stroke-width="1"/>
+  <line x1="0" y1="480" x2="800" y2="480" stroke="#B8B0A4" stroke-width="1"/>
+  <line x1="0" y1="500" x2="800" y2="500" stroke="#B8B0A4" stroke-width="1"/>
+
+  <!-- Back wall -->
+  <rect x="0" y="60" width="800" height="380" fill="#E0E8F0" opacity="0.4"/>
+
+  <!-- Refrigeration cases (main row) -->
+
+  <!-- Open multideck dairy/deli case 1 -->
+  <g transform="translate(20, 100)">
+    <!-- Case back -->
+    <rect x="0" y="0" width="140" height="320" fill="url(#caseGrad)" rx="4" stroke="#8AAAC2" stroke-width="2"/>
+    <!-- Shelves -->
+    <rect x="5" y="60" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="130" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="200" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="270" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <!-- Product (colored blocks) -->
+    <rect x="8" y="68" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <rect x="8" y="66" width="30" height="10" fill="#E87B2A" rx="1" opacity="0.9"/>
+    <rect x="42" y="66" width="30" height="10" fill="#CC2222" rx="1" opacity="0.9"/>
+    <rect x="76" y="66" width="30" height="10" fill="#3498DB" rx="1" opacity="0.9"/>
+    <rect x="8" y="138" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <rect x="8" y="208" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <!-- Cold air curtain lines -->
+    <line x1="5" y1="5" x2="5" y2="315" stroke="#B8D8F0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+    <line x1="15" y1="5" x2="15" y2="315" stroke="#B8D8F0" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+    <!-- Temp display -->
+    <rect x="40" y="8" width="60" height="22" fill="#0A1A2C" rx="3"/>
+    <text x="70" y="18" text-anchor="middle" fill="#2ECC71" font-size="9" font-family="monospace">35°F</text>
+    <text x="70" y="28" text-anchor="middle" fill="#90D0FF" font-size="7" font-family="monospace">DAIRY</text>
+    <!-- Case label -->
+    <text x="70" y="315" text-anchor="middle" fill="#1A3A5C" font-size="8" font-family="Arial, sans-serif" font-weight="bold">MULT-1</text>
+  </g>
+
+  <!-- Open multideck case 2 -->
+  <g transform="translate(175, 100)">
+    <rect x="0" y="0" width="140" height="320" fill="url(#caseGrad)" rx="4" stroke="#8AAAC2" stroke-width="2"/>
+    <rect x="5" y="60" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="130" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="200" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="5" y="270" width="130" height="6" fill="#90B0C8" rx="1"/>
+    <rect x="8" y="68" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <rect x="8" y="138" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <rect x="8" y="208" width="124" height="58" fill="#F5F5DC" opacity="0.7"/>
+    <line x1="5" y1="5" x2="5" y2="315" stroke="#B8D8F0" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+    <rect x="40" y="8" width="60" height="22" fill="#0A1A2C" rx="3"/>
+    <text x="70" y="18" text-anchor="middle" fill="#2ECC71" font-size="9" font-family="monospace">38°F</text>
+    <text x="70" y="28" text-anchor="middle" fill="#90D0FF" font-size="7" font-family="monospace">PRODUCE</text>
+    <text x="70" y="315" text-anchor="middle" fill="#1A3A5C" font-size="8" font-family="Arial, sans-serif" font-weight="bold">MULT-2</text>
+  </g>
+
+  <!-- Glass door reach-in freezer cases -->
+  <!-- Freezer 1 -->
+  <g transform="translate(360, 80)">
+    <rect x="0" y="0" width="80" height="350" fill="#4A6A86" rx="4" stroke="#2A4A66" stroke-width="2"/>
+    <!-- Glass door -->
+    <rect x="8" y="8" width="64" height="334" fill="#B8D8F0" opacity="0.4" rx="2"/>
+    <!-- Frost effect -->
+    <rect x="8" y="8" width="64" height="334" fill="white" opacity="0.08" rx="2"/>
+    <!-- Door handle -->
+    <rect x="36" y="160" width="8" height="40" fill="#9AA8B8" rx="2"/>
+    <!-- Products visible through glass -->
+    <rect x="12" y="30" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <rect x="12" y="120" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <rect x="12" y="220" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <!-- Temp -->
+    <rect x="20" y="12" width="40" height="16" fill="#0A1A2C" rx="2"/>
+    <text x="40" y="24" text-anchor="middle" fill="#2ECC71" font-size="8" font-family="monospace">0°F</text>
+    <text x="40" y="345" text-anchor="middle" fill="#A0BDD0" font-size="7" font-family="Arial, sans-serif" font-weight="bold">FRZR-1</text>
+  </g>
+
+  <!-- Freezer 2 -->
+  <g transform="translate(450, 80)">
+    <rect x="0" y="0" width="80" height="350" fill="#4A6A86" rx="4" stroke="#2A4A66" stroke-width="2"/>
+    <rect x="8" y="8" width="64" height="334" fill="#B8D8F0" opacity="0.4" rx="2"/>
+    <rect x="8" y="8" width="64" height="334" fill="white" opacity="0.08" rx="2"/>
+    <rect x="36" y="160" width="8" height="40" fill="#9AA8B8" rx="2"/>
+    <rect x="12" y="30" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <rect x="12" y="120" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <rect x="12" y="220" width="56" height="80" fill="#E0ECFF" opacity="0.5" rx="1"/>
+    <rect x="20" y="12" width="40" height="16" fill="#0A1A2C" rx="2"/>
+    <text x="40" y="24" text-anchor="middle" fill="#2ECC71" font-size="8" font-family="monospace">0°F</text>
+    <text x="40" y="345" text-anchor="middle" fill="#A0BDD0" font-size="7" font-family="Arial, sans-serif" font-weight="bold">FRZR-2</text>
+  </g>
+
+  <!-- Condensing unit rack (right side) -->
+  <g transform="translate(580, 80)">
+    <!-- Rack frame -->
+    <rect x="0" y="0" width="200" height="340" fill="#3A4A5A" rx="6" stroke="#2A3A4A" stroke-width="2"/>
+    <rect x="0" y="0" width="200" height="20" fill="#2A3A4A" rx="4"/>
+    <text x="100" y="14" text-anchor="middle" fill="#E87B2A" font-size="9" font-family="Arial, sans-serif" font-weight="bold">CONDENSER RACK</text>
+
+    <!-- Compressors -->
+    <circle cx="50" cy="70" r="35" fill="url(#condenserGrad)" stroke="#6A8AA8" stroke-width="3"/>
+    <circle cx="50" cy="70" r="22" fill="#2A4A62"/>
+    <circle cx="50" cy="70" r="10" fill="#1A3A52"/>
+    <text x="50" y="108" text-anchor="middle" fill="#8AAAC2" font-size="7" font-family="Arial, sans-serif">COMP-1</text>
+
+    <circle cx="150" cy="70" r="35" fill="url(#condenserGrad)" stroke="#6A8AA8" stroke-width="3"/>
+    <circle cx="150" cy="70" r="22" fill="#2A4A62"/>
+    <circle cx="150" cy="70" r="10" fill="#1A3A52"/>
+    <text x="150" y="108" text-anchor="middle" fill="#8AAAC2" font-size="7" font-family="Arial, sans-serif">COMP-2</text>
+
+    <!-- Header pipes -->
+    <rect x="15" y="118" width="170" height="12" fill="#B84040" rx="3"/>
+    <text x="100" y="127" text-anchor="middle" fill="white" font-size="6" font-family="Arial, sans-serif">HOT GAS HDR</text>
+    <rect x="15" y="136" width="170" height="12" fill="#4040B8" rx="3"/>
+    <text x="100" y="145" text-anchor="middle" fill="white" font-size="6" font-family="Arial, sans-serif">SUCTION HDR</text>
+    <rect x="15" y="154" width="170" height="12" fill="#408040" rx="3"/>
+    <text x="100" y="163" text-anchor="middle" fill="white" font-size="6" font-family="Arial, sans-serif">LIQUID HDR</text>
+
+    <!-- Control board -->
+    <rect x="15" y="176" width="170" height="100" fill="#0A1A2C" rx="4"/>
+    <rect x="20" y="182" width="80" height="50" fill="#0A2A1A" rx="2"/>
+    <text x="60" y="196" text-anchor="middle" fill="#2ECC71" font-size="7" font-family="monospace">SUCT: 32 PSI</text>
+    <text x="60" y="207" text-anchor="middle" fill="#E87B2A" font-size="7" font-family="monospace">DISC: 280 PSI</text>
+    <text x="60" y="218" text-anchor="middle" fill="#90D0FF" font-size="7" font-family="monospace">SSCR: 12°F</text>
+    <text x="60" y="229" text-anchor="middle" fill="#2ECC71" font-size="7" font-family="monospace">STATUS: OK</text>
+    <!-- LED indicators -->
+    <circle cx="120" cy="195" r="6" fill="#2ECC71"/>
+    <circle cx="138" cy="195" r="6" fill="#2ECC71"/>
+    <circle cx="156" cy="195" r="6" fill="#E87B2A"/>
+    <circle cx="174" cy="195" r="4" fill="#3498DB"/>
+    <rect x="110" y="210" width="60" height="30" fill="#0A0A1A" rx="2"/>
+    <text x="140" y="222" text-anchor="middle" fill="#2ECC71" font-size="7" font-family="monospace">R-448A</text>
+    <text x="140" y="234" text-anchor="middle" fill="#E87B2A" font-size="7" font-family="monospace">SYS OK</text>
+
+    <!-- Oil separator -->
+    <rect x="15" y="284" width="60" height="44" fill="#6A7A8A" rx="4"/>
+    <text x="45" y="310" text-anchor="middle" fill="#A0B0C0" font-size="6" font-family="Arial, sans-serif">OIL SEP</text>
+    <!-- Filter drier -->
+    <rect x="85" y="284" width="60" height="44" fill="#6A7A8A" rx="4"/>
+    <text x="115" y="310" text-anchor="middle" fill="#A0B0C0" font-size="6" font-family="Arial, sans-serif">FILTER</text>
+    <!-- Sight glass -->
+    <rect x="155" y="284" width="30" height="44" fill="#3A4A5A" rx="4"/>
+    <circle cx="170" cy="306" r="10" fill="#B8D8F0" opacity="0.8"/>
+    <text x="170" y="341" text-anchor="middle" fill="#A0B0C0" font-size="6" font-family="Arial, sans-serif">SG</text>
+  </g>
+
+  <!-- Refrigerant piping on ceiling (insulated) -->
+  <rect x="20" y="62" width="560" height="14" fill="#8A8A80" rx="4"/>
+  <rect x="25" y="64" width="550" height="10" fill="#9A9A90" rx="3"/>
+  <text x="300" y="73" text-anchor="middle" fill="#6A6A60" font-size="7" font-family="Arial, sans-serif">INSULATED REFRIGERANT PIPING</text>
+
+  <!-- Caption -->
+  <rect x="0" y="458" width="800" height="42" fill="#1A3A5C" opacity="0.9"/>
+  <text x="20" y="476" fill="white" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Commercial Refrigeration Systems</text>
+  <text x="20" y="493" fill="#E87B2A" font-size="11" font-family="Arial, sans-serif">Display Cases • Rack Systems • Walk-In Coolers • Controls</text>
+  <text x="700" y="481" text-anchor="end" fill="#8AAAC2" font-size="11" font-family="Arial, sans-serif">Henderson, NV</text>
+</svg>

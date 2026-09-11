@@ -1,0 +1,61 @@
+<!-- ============================================================
+     Shared Header Component — No Sweat Mechanical
+     Usage: Copy into each page and adjust the active nav link
+     ============================================================ -->
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__inner">
+      <div class="topbar__contact">
+        <a href="tel:+17025680137" class="topbar__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.12 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.23 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"></path></svg>
+          (702) 568-0137
+        </a>
+        <a href="mailto:info@nosweatmechanical.com" class="topbar__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          info@nosweatmechanical.com
+        </a>
+      </div>
+      <span class="topbar__license">NV Contractor License #75507 · Henderson, NV</span>
+    </div>
+  </div>
+</div>
+
+<!-- Site Header -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <div class="site-header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-logo">
+        <div class="site-logo__mark">
+          <span class="site-logo__initials">NSM</span>
+        </div>
+        <div class="site-logo__text">
+          <span class="site-logo__name">No Sweat Mechanical</span>
+          <span class="site-logo__sub">Commercial HVAC · Henderson, NV</span>
+        </div>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="site-nav" id="siteNav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="site-nav__link" data-page="home">Home</a>
+        <a href="about.html" class="site-nav__link" data-page="about">About</a>
+        <a href="services.html" class="site-nav__link" data-page="services">Services</a>
+        <a href="projects.html" class="site-nav__link" data-page="projects">Projects</a>
+        <a href="maintenance.html" class="site-nav__link" data-page="maintenance">Maintenance</a>
+        <!-- TODO: Update href with residential sister-site URL --><a href="#" class="site-nav__link" target="_blank" rel="noopener noreferrer">Residential <a href="safety.html" class="site-nav__link" data-page="safety">Safety</a>#8599;</a>
+        <a href="contact.html" class="site-nav__cta" data-page="contact">Contact Us</a>
+      </nav>
+
+    </div>
+  </div>
+</header>
